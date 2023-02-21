@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/formiojs@4.13.1/dist/formio.full.min.css">
+    <link rel="stylesheet" href="https://forms-flow-ai-stylesheet.pages.dev/formsflow.min.css">    
+    <link rel="stylesheet" href="https://forms-flow-ai-stylesheet.pages.dev/formsflow-theme.min.css">    
+    <link rel="stylesheet" href="https://forms-flow-ai-stylesheet.pages.dev/formsflow-custom.css">
+    <script src="https://dm3cs41qneo90.cloudfront.net/"></script>
+
+</head>
+<body>
+    <formsflow-wc
+        configFile
+        formName = "jan2023-formembedinternal"
+        token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzYW1wbGUiLCJlbWFpbCI6InNhbXBsZUBlbWFpbC5jb20iLCJ0ZW5hbnRLZXkiOiJqYW4yMDIzIn0.e52qHXEjBH4ezkZZrAKV7sBToOfp7Wj-HOV0ol4V2P4"
+        message ="Thank you for your Response"
+    ></formsflow-wc>  
+
+    <script>
+    const configFile = {
+        authenticationType : "external",
+      webApiUrl: 'https://app1.aot-technologies.com/api',
+      formioUrl:'https://app1.aot-technologies.com/formio/form'
+    }
+    document.querySelector('formsflow-wc').setAttribute('configFile',JSON.stringify(configFile));
+    </script>
+</body>
+</html>
