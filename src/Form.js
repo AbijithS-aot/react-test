@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 
 function Form() {
   
-    const configFile = {
-      authenticationType : "external",
-      webApiUrl: 'https://app1.aot-technologies.com/api',
-      formioUrl:'https://app1.aot-technologies.com/formio/form'
+  const configFile = {
+    authenticationType : "external",
+    webApiUrl: 'https://formsflowapi2.aot-technologies.com',
     }
   useEffect(()=>{
     document.querySelector('formsflow-wc').setAttribute('configFile',JSON.stringify(configFile));
@@ -21,11 +20,11 @@ function Form() {
         
         <div style={{width:"600px"}} >
         <formsflow-wc
-        configFile
-        formName = "jan2023-formembedinternal"
-        token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzYW1wbGUiLCJlbWFpbCI6InNhbXBsZUBlbWFpbC5jb20iLCJ0ZW5hbnRLZXkiOiJqYW4yMDIzIn0.e52qHXEjBH4ezkZZrAKV7sBToOfp7Wj-HOV0ol4V2P4"
-        message ="Thank you for your Response"
-        ></formsflow-wc>  
+      configFile
+      formName = "embeddingtestform-1672722115013"
+      token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzYW1wbGUiLCJlbWFpbCI6InNhbXBsZUBlbWFpbC5jb20ifQ.AdTD5cMc2czP71H2Qfb42AXyLodTt9fPItFD7DybqJ0"
+      message ="Thank you for your Response"
+      ></formsflow-wc>   
         </div>
       </div>
     </>
